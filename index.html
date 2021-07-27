@@ -7,7 +7,7 @@
     <title>Blog Café</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">   
 </head>
@@ -19,9 +19,9 @@
                     <h1 class="header__logo noMargin contenedor">Blog<span class="header__bold">DeCafé</span></h1>
                 </a>
                 <nav class="nav">
-                    <a class="nav__enlace" href="">Nosotros</a>
-                    <a class="nav__enlace" href="">Curso</a>
-                    <a class="nav__enlace" href="">Contacto</a>
+                    <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="nav__enlace" href="curso.html">Curso</a>
+                    <a class="nav__enlace" href="contacto.html">Contacto</a>
                 </nav>
             </div>
         </div>
@@ -33,75 +33,73 @@
 
     <div class="contenedor grid">
         <main>
-            <h2>Nuestro blog</h2>
-            <article class="articulo">
+            <h3>Nuestro blog</h3>
+            <article class="articulo borde">
                 <img class="articulo__img" src="/img/blog1.jpg" alt="Fotografia sobre tipos de granos">
-                <h3 class="noMargin centrarTexto">Tipos de Grano de cafe</h3>
+                <h3 class="noMargin centrarTexto">Tipos de Grano de Café</h3>
                 <p class=" noMargin centrarTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Voluptate, rerum, reprehenderit consequatur perferendis 
                     officia, vitae fuga animi temporibus itaque atque reiciendis 
                     ea excepturi! Molestias aperiam fugiat deleniti laudantium 
                     atque numquam?
                 </p>
-                <div class="articulo__entrada">
-                    <a class="articulo__entrada--enlace" href="">Leer entrada</a>
-                </div>
+                <a class="boton boton--primario" href="entrada.html">Leer entrada</a>
+            </article>
+            <article class="articulo borde">
+                <img class="articulo__img" src="/img/blog2.jpg" alt="Fotografia sobre Recetas de Cafe">
+                <h3 class="noMargin centrarTexto">3 Deliciosas Recetas de Café</h3>
+                <p class=" noMargin centrarTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptate, rerum, reprehenderit consequatur perferendis 
+                    officia, vitae fuga animi temporibus itaque atque reiciendis 
+                    ea excepturi! Molestias aperiam fugiat deleniti laudantium 
+                    atque numquam?
+                </p>
+                <a class="boton boton--primario" href="entrada.html">Leer entrada</a>
             </article>
             <article class="articulo">
-                <img class="articulo__img" src="/img/blog2.jpg" alt="Fotografia sobre Recetas de Cafe">
-                <h3 class="noMargin centrarTexto">3 Deliciosas Recetas de Cafe</h3>
-                <p class=" noMargin centrarTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptate, rerum, reprehenderit consequatur perferendis 
-                    officia, vitae fuga animi temporibus itaque atque reiciendis 
-                    ea excepturi! Molestias aperiam fugiat deleniti laudantium 
-                    atque numquam?
-                </p>
-                <div class="articulo__entrada">
-                    <a class="articulo__entrada--enlace" href="">Leer entrada</a>
-                </div>
-            </article>
-            <article>
                 <img class="articulo__img" src="/img/blog3.jpg" alt="Fotografia sobre Beneficios del cafe">
-                <h3 class="noMargin centrarTexto">Beneficios del cafe</h3>
+                <h3 class="noMargin centrarTexto">Beneficios del Café</h3>
                 <p class=" noMargin centrarTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Voluptate, rerum, reprehenderit consequatur perferendis 
                     officia, vitae fuga animi temporibus itaque atque reiciendis 
                     ea excepturi! Molestias aperiam fugiat deleniti laudantium 
                     atque numquam?
                 </p>
-                <div class="articulo__entrada">
-                    <a class="articulo__entrada--enlace" href="">Leer entrada</a>
-                </div>
+                <a class="boton boton--primario" href="entrada.html">Leer entrada</a>
             </article>
         </main>
 
         <aside>
-            <h2>Nuestros cursos y talleres</h2>
-            <div>
-                <h3>Tecnicas de extraccion del cafe</h3>
-                <p>Precio: <span>Gratis</span></p>
-                <p>Cupo: <span>20</span></p>
-                <a href="">Mas informacion sobre nuestro curso</a>
-            </div>
-            <div>
-                <h3>4 Resetas de cafe para principiantes</h3>
-                <p>Precio: <span>Gratis</span></p>
-                <p>Cupo: <span>20</span></p>
-                <a href="">Mas informacion sobre nuestro curso</a>
-            </div>
+            <h3>Nuestros Cursos y Talleres</h3>
+            <ul class="cursos noPadding">
+                <li class="curso__widget borde">
+                    <h4>Tecnicas de Extraccion del Café</h4>
+                    <p class="curso__widget--bold">Precio: <span class="curso__widget--precio">Gratis</span></p>
+                    <p class="curso__widget--bold">Cupo: <span class="curso__widget--precio">20</span></p>
+                    <a class="boton boton--secundario" href="">Mas informacion</a>
+                </li>
+                <li class="curso__widget">
+                    <h4>4 Resetas de Café para Principiantes</h4>
+                    <p class="curso__widget--bold">Precio: <span class="curso__widget--precio">Gratis</span></p>
+                    <p class="curso__widget--bold">Cupo: <span class="curso__widget--precio">20</span></p>
+                    <a class="boton boton--secundario" href="">Mas informacion</a>
+                </li>
+            </ul>
         </aside>
     </div>
 
-    <footer>
-        <div>
-            <a href="index.html">
-                <h1>blog<span>deCafé</span></h1>
-            </a>
-            <nav>
-                <a href="">Nosotros</a>
-                <a href="">Curso</a>
-                <a href="">Contacto</a>
-            </nav>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="bar">
+                <a class="logo" href="index.html">
+                    <h1 class="header__logo noMargin contenedor">Blog<span class="header__bold">DeCafé</span></h1>
+                </a>
+                <nav class="nav">
+                    <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="nav__enlace" href="curso.html">Curso</a>
+                    <a class="nav__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
         </div>
     </footer>
 </body>

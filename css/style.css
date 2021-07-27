@@ -3,7 +3,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
-    --fuentePrincipal: 'Raleway', sans-serif;
+    --fuentePrincipal: 'Noto Sans TC', sans-serif;
 }
 html {
     box-sizing: border-box;
@@ -23,6 +23,7 @@ a{
 }
 h1,h2,h3{
     font-family: var(--fuentePrincipal);
+    line-height: 1.2;
 }
 h1{
     font-size: 4.8rem;
@@ -31,10 +32,10 @@ h2{
     font-size: 4rem;
 }
 h3{
-    font-size: 3.2rem;
+    font-size: 2.9rem;
 }
 h4{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 img{
     max-width: 100%;
@@ -71,7 +72,7 @@ img{
     color: var(--blanco);
 }
 .header__logo{
-    font-weight: 300;
+    font-weight: 400;
 }
 .header__bold{
     font-weight: 700;
@@ -80,11 +81,12 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    margin-top: 1.5rem;
+    gap: 2rem;
 }
 .nav__enlace{
     color: var(--blanco);
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 @media(min-width: 768px){
     .bar,.nav{
@@ -94,7 +96,12 @@ img{
 }
 .header__informacion{
     color: var(--blanco);
-    padding-top: 15rem;
+    padding-top: 12rem;
+}
+@media(min-width: 768px){
+    .header__informacion{
+        padding-top: 22rem;
+    }
 }
 /* main */
 @media(min-width: 768px){
@@ -104,24 +111,142 @@ img{
         column-gap: 4rem;
     }
 }
-.articulo{
+.borde{
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
-.articulo__entrada{
-    background-color:var(--negro);
+.boton{
+    display: block;
     padding: 2rem;
     margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-}
-.articulo__entrada--enlace{
+    text-align: center;
     color: var(--blanco);
     text-transform: uppercase;
-    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: none;
+}
+.boton--primario{
+    background-color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
 }
 @media(min-width: 768px){
-    .articulo__entrada{
+    .boton{
         display: inline-block;
     }
+}
+/* aside */
+.curso__widget{
+    list-style: none;
+}
+.curso__widget--bold{
+    font-weight: bold;
+}
+.curso__widget--precio{
+    font-weight: normal;
+}
+
+/* footer */
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+/* pag nosotros */
+/* main */
+.nosotros__img{
+    width: 100%;
+}
+.nosotros__parrafos--info{
+    font-size: 1.7rem;
+}
+@media(min-width: 768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+/* pag cursos */
+/* main */
+.curso{
+    padding-bottom: 2rem;
+}
+@media(min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    .curso__widget--info{
+        margin-top: 10rem;
+    }
+}
+
+/* pag Contacto */
+/* main */
+.contactoBackgound{
+    background-image: url(/img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+.formulario{
+    background-color: var(--blanco);
+    margin: -15rem auto 0 auto;
+    padding: 3rem 3rem 0 3rem;
+    width: 85%;
+}
+.campo{
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.campo:last-child{
+    padding-bottom: 0;
+}
+.campo__label{
+    font-weight: bold;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo:nth-child(3){
+    height: 20rem;
+}
+@media(min-width: 768px){
+    .formulario{
+        width: 90%;
+        margin: -5rem auto 0 auto;
+        padding: 5rem 5rem 0 5rem;
+    }
+    .campo{
+        flex-direction: row;
+        justify-content: unset;
+    }
+    .campo:last-child{
+        justify-content: flex-end;
+    }
+    .campo__label{
+        text-align: right;
+        padding-right: 2rem;
+        flex: 0 0 9rem;
+    }
+}
+/* pag entrada */
+/* main */
+.entrada{
+    width: 90%;
+    margin: 0 auto;
+}
+.entrada__texto{
+    line-height: 2;
+    font-size: 1.8rem;
 }

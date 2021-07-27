@@ -12,33 +12,68 @@
     <title>Blog Café</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html">
-                <h1>blog<span>deCafé</span></h1>
-            </a>
-            <nav>
-                <a href="">Nosotros</a>
-                <a href="">Curso</a>
-                <a href="">Contacto</a>
-            </nav>
+    <header class="header">
+        <div class="contenedor">
+            <div class="bar">
+                <a class="logo" href="index.html">
+                    <h1 class="header__logo noMargin contenedor">Blog<span class="header__bold">DeCafé</span></h1>
+                </a>
+                <nav class="nav">
+                    <a class="nav__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="nav__enlace" href="curso.html">Curso</a>
+                    <a class="nav__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
         </div>
-        <div>
-            <h2>Blog de café con consejos y cursos</h2>
-            <p>Aprende de los expertos con las mejores recetas y consejos</p>
+        <div class="header__informacion">
+            <h2 class="centraTexto noMargin">Blog de café con consejos y cursos</h2>
+            <p class="centraTexto noMargin">Aprende de los expertos con las mejores recetas y consejos</p>
         </div>
     </header>
 
-    <footer>
-        <div>
-            <a href="index.html">
-                <h1>blog<span>deCafé</span></h1>
-            </a>
-            <nav>
-                <a href="">Nosotros</a>
-                <a href="">Curso</a>
-                <a href="">Contacto</a>
-            </nav>
+    <div class="contenedor">
+        <h3 class="noPadding centraTexto">Sobre Nosotros</h3>
+        <main class="nosotros">
+            <img class="nosotros__img" src="/img/nosotros.jpg" alt="Fotografia de nosotros">
+            <div class="nosotros__parrafos">
+                <p class="nosotros__parrafos--info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nunc et mi a lectus egestas maximus. Donec rutrum massa 
+                    sit amet tellus auctor, at pharetra dolor bibendum. In 
+                    vulputate sem lacus, et molestie velit feugiat non. Lorem 
+                    ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                    gravida interdum rhoncus. Proin turpis sapien, blandit vel 
+                    dignissim vel, ultricies sollicitudin erat. Nunc hendrerit 
+                    tortor nec nisi rutrum, et fermentum arcu aliquet. 
+                    Suspendisse ex neque, fringilla non sapien eget, lobortis 
+                    vulputate odio.
+                </p>
+                <p class="nosotros__parrafos--info">
+                    Curabitur accumsan sed justo in lacinia. Nulla nec urna consectetur, 
+                    porttitor elit ultricies, hendrerit urna. Integer nunc libero, 
+                    elementum eget est vel, blandit aliquet lorem. Morbi vulputate 
+                    purus congue ullamcorper vestibulum. Mauris pellentesque congue 
+                    tellus in tempus. Cras condimentum aliquet erat, nec malesuada dui
+                        placerat et. Aliquam sed purus egestas, fringilla neque vitae, 
+                        congue risus. Maecenas nisi mauris, venenatis ut tincidunt quis, 
+                        feugiat vel quam.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="bar">
+                <a class="logo" href="index.html">
+                    <h1 class="header__logo noMargin contenedor">Blog<span class="header__bold">DeCafé</span></h1>
+                </a>
+                <nav class="nav">
+                    <a class="nav__enlace" href="">Nosotros</a>
+                    <a class="nav__enlace" href="">Curso</a>
+                    <a class="nav__enlace" href="">Contacto</a>
+                </nav>
+            </div>
         </div>
     </footer>
 </body>
