@@ -3,7 +3,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
-    --fuentePrincipal: 'Noto Sans TC', sans-serif;
+    --fuentePrincipal: 'PT Sans', sans-serif;
 }
 html {
     box-sizing: border-box;
